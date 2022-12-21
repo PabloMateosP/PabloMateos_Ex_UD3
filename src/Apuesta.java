@@ -9,9 +9,17 @@ import javax.swing.WindowConstants;
  * and open the template in the editor.
  */
 
+/**
+ *
+ * @author 1DAW_2223_09 Pablo Mateos Palas
+ */
+
+
 public class Apuesta extends javax.swing.JFrame {
 
-   
+    /**
+     * 
+     */
     public Apuesta() 
     {
         initComponents();
@@ -140,7 +148,12 @@ public class Apuesta extends javax.swing.JFrame {
         this.listaResultados.setModel(modelovacio);
     }//GEN-LAST:event_bResetearActionPerformed
 
-   
+    /**
+     *
+     * @param n1 n1 así como el siguiente n2 se corresponden a dos numero declarados para el valor de la quiniela ,1 y 2.
+     * @param n2
+     * @return
+     */
     public int cualquiera(int n1, int n2)
     {
         return (int)Math.floor((Math.random()*(n2-n1+1) + n1));
@@ -172,7 +185,10 @@ public class Apuesta extends javax.swing.JFrame {
         this.listaResultados.setModel(modeloquinielaresuelta);
     }//GEN-LAST:event_bRealizarActionPerformed
 
-    
+    /**
+     *
+     * @param partido, como su nombre indica así como el constructor elegido esto adquirira una palabra o frase perteneciente al partido en quiniela.
+     */
     public void partidoNuevo(String partido)
     {
         DefaultListModel modelonuevo = new DefaultListModel();
@@ -186,7 +202,10 @@ public class Apuesta extends javax.swing.JFrame {
         this.listaQuiniela.setModel(modelonuevo);
     }
     
-  
+    /**
+     *
+     * @param indice, indice es otra variable creada para guardar un numero. 
+     */
     public void borraPartido(int indice)
     {
         DefaultListModel modelonuevoquiniela = new DefaultListModel();
@@ -212,7 +231,10 @@ public class Apuesta extends javax.swing.JFrame {
         this.listaResultados.setModel(modelonuevoresultados);
     }
     
-   
+    /**
+     *
+     * @param args
+     */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
