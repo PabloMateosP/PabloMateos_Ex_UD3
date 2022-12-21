@@ -1,14 +1,26 @@
 
 import java.awt.event.KeyEvent;
+
+/**
+ *
+ * @author 1DAW_2223_09 Pablo Mateos Palas 
+ */
 public class CrearPartido extends javax.swing.JFrame
 {
     private Apuesta v;
+
+    /**
+     * 
+     */
     public CrearPartido() 
     {
         initComponents();
     }
 
-   
+    /**
+     *
+     * @param ventana 
+     */
     public CrearPartido(Apuesta ventana) 
     {
         initComponents();
@@ -63,6 +75,10 @@ public class CrearPartido extends javax.swing.JFrame
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     *
+     * @param p siendo un tipo cadena donde se guardaran valores presentes al añadir partidos.
+     */
     public void añadePartido(String p)
     {
         v.partidoNuevo(p);
@@ -81,7 +97,10 @@ public class CrearPartido extends javax.swing.JFrame
         }
     }//GEN-LAST:event_tPartidoKeyPressed
 
-    
+    /**
+     *
+     * @param args
+     */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
